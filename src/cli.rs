@@ -1,9 +1,9 @@
 use clap::{App, AppSettings, Arg, ArgMatches};
 
 use crate::common::SeqFormat;
-use crate::fasta;
-use crate::nexus;
-use crate::phylip;
+// use crate::fasta;
+// use crate::nexus;
+// use crate::phylip;
 
 fn get_args(version: &str) -> ArgMatches {
     App::new("segul")

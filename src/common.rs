@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub enum SeqFormat {
     Fasta,
     Nexus,
@@ -6,6 +7,7 @@ pub enum SeqFormat {
 
 // Alphabeth for dna.
 // Include IUPAC characters plus missing symbol (?)
+#[allow(dead_code)]
 pub fn is_valid_dna(dna: &str) -> bool {
     let valid_chars = String::from("ACGTRYSWKMBDHVNacgtryswkmbdhvn.-?");
     dna.chars().all(|char| valid_chars.contains(char))
